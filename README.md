@@ -2,8 +2,8 @@
 
 Welcome to "Bash Like a Boss," a collection of ten Red Hat-based distribution-specific scripts designed to elevate your system administration tasks. These scripts transform daily admin routines into an efficient symphony of command-line wizardry. No more tedious keystrokes or drowning in logs – channel your inner scripting wizard and reign over your server room like a Bash Baron!
 
-[!NOTE]
-I've crafted and thoroughly tested the scripts provided below on Red Hat-based distributions, specifically AlmaLinux. It's advisable to make minor adjustments as needed before deploying them in your specific environment.
+> [!NOTE]
+> I've crafted and thoroughly tested the scripts provided below on Red Hat-based distributions, specifically AlmaLinux. It's advisable to make minor adjustments as needed before deploying them in your specific environment.
 
 ## Usage Guide:
 
