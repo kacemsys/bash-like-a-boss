@@ -11,7 +11,7 @@ Welcome to "Bash Like a Boss," a collection of ten Red Hat-based distribution-sp
 2. Grant execution permissions using chmod +x system_report.sh.
 3. Effortlessly initiate execution through the command ./system_report.sh.
    
-# Scripts:
+## Scripts:
 
 ## 1. Your ID Please!
 Empower your Linux system to identify itself by providing essential system information, including the hostname, kernel version, CPU details, memory status, and available disk space.
