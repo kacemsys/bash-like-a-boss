@@ -43,9 +43,8 @@ A script covering various aspects, including basic system information, service s
 ## 10. Script Scheduler (Automate Your Tasks with Ease):
 Simplify the process of scheduling custom scripts to run automatically using the cron service. Configure cron jobs with ease using this interactive script.
 
-[!TIP] 
-- Implement logging for scripts scheduled with cron to easily monitor their output.
-```
-Example: 0 2 * * * /path/to/script.sh >> /path/to/logfile.log 2>&1.
-
-```
+>[!TIP] 
+> Implement logging for scripts scheduled with cron to easily monitor their output.
+>```
+> Example: 0 2 * * * /path/to/script.sh >> /path/to/logfile.log 2>&1.
+>```
