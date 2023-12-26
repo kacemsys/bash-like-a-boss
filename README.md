@@ -2,6 +2,9 @@
 
 Welcome to "Bash Like a Boss," a collection of ten Red Hat-based distribution-specific scripts designed to elevate your system administration tasks. These scripts transform daily admin routines into an efficient symphony of command-line wizardry. No more tedious keystrokes or drowning in logs – channel your inner scripting wizard and reign over your server room like a Bash Baron!
 
+[!NOTE]
+I've crafted and thoroughly tested the scripts provided below on Red Hat-based distributions, specifically AlmaLinux. It's advisable to make minor adjustments as needed before deploying them in your specific environment.
+
 ## Usage Guide:
 
 1. Save scripts with meaningful names (e.g., system_report.sh).
@@ -40,9 +43,9 @@ A script covering various aspects, including basic system information, service s
 ## 10. Script Scheduler (Automate Your Tasks with Ease):
 Simplify the process of scheduling custom scripts to run automatically using the cron service. Configure cron jobs with ease using this interactive script.
 
-# Bonus Tips:
-- Refine your scripts further with these bonus tips:
-- Employ redirection (> and >>) to log essential information to a file.
-- Tailor scripts to unique needs by adjusting variables and configurations.
-- Enhance script clarity by adding comments for future reference.
+[!TIP] 
 - Implement logging for scripts scheduled with cron to easily monitor their output.
+```
+Example: 0 2 * * * /path/to/script.sh >> /path/to/logfile.log 2>&1.
+
+```
