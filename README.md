@@ -7,7 +7,7 @@ Welcome to "Bash Like a Boss," a collection of ten Red Hat-based distribution-sp
 
 ## Usage Guide:
 
-1. Save scripts with meaningful names (e.g., system_report.sh).
+1. Download or Save scripts with meaningful names (e.g., system_report.sh).
 2. Grant execution permissions using chmod +x system_report.sh.
 3. Effortlessly initiate execution through the command ./system_report.sh.
    
