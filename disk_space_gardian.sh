@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Find all mounted partitions with less than 10% free space
 low_disks=$(df -H | awk '{print $5}' | grep -E '^([0-9]+)$' | awk 'NR>1 {if ($1 < 10) print $0}')

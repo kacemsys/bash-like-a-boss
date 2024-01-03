@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Configurable list of essential services
 declare -a services=("sshd" "httpd" "firewalld")

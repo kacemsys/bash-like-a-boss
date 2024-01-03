@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Rotate and compress old log files in /var/log
 for f in /var/log/*.log; do

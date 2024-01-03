@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Script Scheduler
 # Automate Your Tasks with Ease

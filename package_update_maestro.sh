@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Inform the user that the script is running
 echo "Checking for updates. Please wait..."

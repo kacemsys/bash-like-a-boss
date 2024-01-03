@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Display basic system information
 echo "System Information:"
 echo "-------------------"
