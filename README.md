@@ -13,10 +13,10 @@ Welcome to "Bash Like a Boss," a collection of ten Red Hat-based distribution-sp
    
 ## Scripts:
 
-## 1.  Your ID Please ! [your_id_please.sh](your_id_please.sh)
+## 1.  Your ID Please ! (your_id_please.sh) :
 Empower your Linux system to identify itself by providing essential system information, including the hostname, kernel version, CPU details, memory status, and available disk space.
 
-## 2. Disk Space Guardian ([package_update_maestro.sh](package_update_maestro.sh)):
+## 2. Disk Space Guardian (package_update_maestro.sh):
 Check for mounted partitions with less than 10% free space. This script filters the output of the df -H command to display information about file system disk space usage.
 
 ##  3. Package Update Checker (package_update_maestro.sh):
