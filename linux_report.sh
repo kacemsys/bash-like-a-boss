@@ -1,4 +1,15 @@
 #!/usr/bin/env bash
+#
+# System Report Generation Script
+# Author: Aboulkacem KRADRA (@kacemsys)
+#
+# Description:
+#   This script generates a system report, providing information about basic system details,
+#   essential service statuses, available updates, disk space, and network information.
+#   Colored output is used to highlight important information. The script is designed to be
+#   user-friendly and includes functions to format time, print colored text, and check
+#   the availability of commands.
+#
 
 # Function to format seconds into human-readable time
 format_time() {
@@ -60,15 +71,14 @@ generate_report() {
   if command_exists "yum"; then
     echo -e "\n$(print_color 34 "Available Updates Check:")"
 
-        # Update available packages and notify about important updates
-	important_updates=$(yum check-update -qy | grep -E 'Important|Security')
-	if [[ -n "$important_updates" ]]; then
-	  echo "Important updates available!"
-	  echo "$important_updates"
-	else
-  	echo "No critical updates found. You're good to go!"
-fi
-
+    # Update available packages and notify about important updates
+    important_updates=$(yum check-update -qy | grep -E 'Important|Security')
+    if [[ -n "$important_updates" ]]; then
+      echo "Important updates available!"
+      echo "$important_updates"
+    else
+      echo "No critical updates found. You're good to go!"
+    fi
   fi
 
   # Check disk space
