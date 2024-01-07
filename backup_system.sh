@@ -1,4 +1,14 @@
 #!/usr/bin/env bash
+#
+# System Configuration Backup Script
+# Author: Aboulkacem KRADRA (@kacemsys)
+#
+# Description:
+#   This script creates a backup of the system configuration files in the /etc directory.
+#   Backups are stored in a specified directory with a timestamp in the filename.
+#   The script also verifies the success of the backup process and displays a list
+#   of available backups in the backup directory.
+#
 
 # Directory to store backups
 backup_dir="/backup"
