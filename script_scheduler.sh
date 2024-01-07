@@ -1,7 +1,14 @@
 #!/usr/bin/env bash
-
+#
 # Script Scheduler
 # Automate Your Tasks with Ease
+# Author: Aboulkacem KRADRA (@kacemsys)
+#
+# Description:
+#   This script provides a simple interface to automate custom tasks by scheduling them with cron.
+#   It prompts the user for the path of the script to schedule and the desired cron interval.
+#   The script then adds the specified cron job to the user's crontab.
+#
 
 # Function to check if a command is available
 command_exists() {
@@ -39,4 +46,3 @@ if [ $? -eq 0 ]; then
 else
   echo "Error: Failed to add the cron job. Please check your cron configuration."
 fi
- 
