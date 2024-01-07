@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # Network and Security Information Script
-# Author: [Author Name] ([GitHub Username])
+# Author: Aboulkacem KRADRA (@kacemsys)
 #
 # Description:
 #   This script provides a summary of network and security information on the system.
