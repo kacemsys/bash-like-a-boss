@@ -1,6 +1,19 @@
-#!/usr/bin/env bash
+#!/bin/bash
+#
+# Network and Security Information Script
+# Author: [Author Name] ([GitHub Username])
+#
+# Description:
+#   This script provides a summary of network and security information on the system.
+#   It tests connectivity to a specific host (Google's DNS: 8.8.8.8), displays
+#   network interfaces, IP addresses, default gateway, external IP address, public DNS servers,
+#   firewall status, active users, open ports, OpenSSH version, and checks for Heartbleed
+#   and Shellshock vulnerabilities. Additionally, it lists listening services, ARP table,
+#   and active connections.
+#
 
-echo "Please wait..."
+# Inform the user that the script is running
+echo "Loading Information. Please wait..."
 
 # Test connectivity to a specific host (example Google's DNS: 8.8.8.8)
 ping -c 4 8.8.8.8 > /dev/null
@@ -22,13 +35,13 @@ echo "- Open Ports: $(netstat -tunlp | awk '/LISTEN/ {gsub(/.*:/, "", $4); print
 echo "- OpenSSH Version: $(ssh -V 2>&1 | cut -d' ' -f1-2)"
 echo "- Heartbleed vulnerability (OpenSSL): $(openssl version -a | grep -q 'OpenSSL 1.0.1[0-9a-f]*' && echo "Vulnerable, Update OpenSSL!" || echo "Not Vulnerable")"
 echo "- Shellshock vulnerability (Bash): $(env 'VAR=() { :;}; echo vulnerable' 'FUNCTION()=() { :;}; echo Vulnerable' bash -c 'echo Not Vulnerable')"
-echo 
-echo "- Listening Services:" 
+echo
+echo "- Listening Services:"
 echo "$(ss -tunlp | awk '/LISTEN/ {print "Service:", $7, "| Protocol:", $1, "| User:", $NF}' | column -t)"
 echo
 
-echo  "- ARP Table :"
+echo "- ARP Table :"
 echo "$(arp -a)"
-echo 
+echo
 echo "- Active Connections:"
 echo "$(netstat -tunapl | grep ESTABLISHED)"
